@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Números Ímpares</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 20px;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Números Ímpares de 1 a 10</h1>
+
+<button onclick="mostrarImpares()">Mostrar</button>
+
+<div id="resultado"></div>
+
+<script>
+function mostrarImpares() {
+    let resultado = "";
+
+    for (let i = 1; i <= 10; i++) {
+        if (i % 2 !== 0) {
+            resultado += i + " ";
+        }
+    }
+
+    document.getElementById("resultado").textContent = resultado;
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Nome e Idade</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+</style>
+
+</head>
+<body>
+
+<h1>Digite seu nome e idade</h1>
+
+<input type="text" id="nome" placeholder="Digite seu nome">
+<br>
+<input type="text" id="idade" placeholder="Digite sua idade">
+<br><br>
+
+<button onclick="mostrarMensagem()">Mostrar</button>
+
+<script>
+function mostrarMensagem() {
+    let nome = document.getElementById("nome").value;
+    let idade = document.getElementById("idade").value;
+
+    alert(nome + " tem " + idade + " anos");
+}
+</script>
+
+</body>
+</html>

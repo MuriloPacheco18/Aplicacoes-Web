@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>Soma de Dois Números</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Soma de Dois Números</h1>
+
+<input type="text" id="n1" placeholder="Primeiro número">
+<br>
+<input type="text" id="n2" placeholder="Segundo número">
+<br><br>
+
+<button onclick="somar()">Somar</button>
+
+<script>
+function somar() {
+    let n1 = Number(document.getElementById("n1").value);
+    let n2 = Number(document.getElementById("n2").value);
+
+    let resultado = n1 + n2;
+
+    alert("Resultado: " + resultado);
+}
+</script>
+
+</body>
+</html>
